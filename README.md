@@ -1,5 +1,1 @@
-## 运行
-```bash
-pnpm i
-pnpm run docs 
-```
+## [在线文档](https://caring-ui.github.io/caring-ui-docs/)
