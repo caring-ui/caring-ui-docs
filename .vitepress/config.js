@@ -2,7 +2,7 @@
  * @Author: Wanko
  * @Date: 2024-04-30 14:41:18
  * @LastEditors: Wanko
- * @LastEditTime: 2024-05-08 17:13:57
+ * @LastEditTime: 2024-05-08 17:47:07
  * @Description:
  */
 import { defineConfig } from 'vitepress'
@@ -10,7 +10,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   // base,
-  // base = '/vitepress/'
+  base: '/caring-ui-docs/',
   title: 'CaringUI',
   description: 'CaringUI | 由 Vite 和 Vue 驱动的静态站点生成器',
   lastUpdated: true,
