@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.JR-NCfhW.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"guide/链接CMS.md","filePath":"guide/链接CMS.md","lastUpdated":null}'),r={name:"guide/链接CMS.md"};function o(s,n,c,d,i,_){return a(),t("div")}const m=e(r,[["render",o]]);export{l as __pageData,m as default};

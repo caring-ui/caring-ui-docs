@@ -1,0 +1,9 @@
+import{_ as a,c as s,o as e,a3 as n}from"./chunks/framework.JR-NCfhW.js";const _=JSON.parse('{"title":"路由","description":"","frontmatter":{},"headers":[],"relativePath":"guide/路由.md","filePath":"guide/路由.md","lastUpdated":null}'),t={name:"guide/路由.md"},p=n(`<h1 id="路由" tabindex="-1">路由 <a class="header-anchor" href="#路由" aria-label="Permalink to &quot;路由&quot;">​</a></h1><h2 id="基于文件的路由" tabindex="-1">基于文件的路由 <a class="header-anchor" href="#基于文件的路由" aria-label="Permalink to &quot;基于文件的路由&quot;">​</a></h2><p>VitePress 使用基于文件的路由，这意味着生成的 HTML 页面是从源 Markdown 文件的目录结构映射而来的。例如，给定以下目录结构：</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span>.</span></span>
+<span class="line"><span>├─ guide</span></span>
+<span class="line"><span>│  ├─ getting-started.md</span></span>
+<span class="line"><span>│  └─ index.md</span></span>
+<span class="line"><span>├─ index.md</span></span>
+<span class="line"><span>└─ prologue.md</span></span></code></pre></div><p>生成的 HTML 页面将如下所示：</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code"><code><span class="line"><span>index.md                  --&gt;  /index.html (可以通过 / 访问)</span></span>
+<span class="line"><span>prologue.md               --&gt;  /prologue.html</span></span>
+<span class="line"><span>guide/index.md            --&gt;  /guide/index.html (可以通过 /guide/ 访问)</span></span>
+<span class="line"><span>guide/getting-started.md  --&gt;  /guide/getting-started.html</span></span></code></pre></div><p>生成的 HTML 可以托管在任何支持静态文件的 Web 服务器上。</p><hr>`,8),i=[p];function d(l,o,c,r,g,h){return e(),s("div",null,i)}const m=a(t,[["render",d]]);export{_ as __pageData,m as default};

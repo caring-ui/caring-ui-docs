@@ -1,0 +1,1 @@
+import{_ as t,c as e,o as a}from"./chunks/framework.JR-NCfhW.js";const p=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"guide/frontmatter.md","filePath":"guide/frontmatter.md","lastUpdated":null}'),r={name:"guide/frontmatter.md"};function o(n,s,c,d,i,m){return a(),e("div")}const _=t(r,[["render",o]]);export{p as __pageData,_ as default};

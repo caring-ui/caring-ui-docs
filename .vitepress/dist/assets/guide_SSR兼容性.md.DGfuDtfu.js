@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.JR-NCfhW.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"guide/SSR兼容性.md","filePath":"guide/SSR兼容性.md","lastUpdated":null}'),r={name:"guide/SSR兼容性.md"};function o(s,n,c,d,_,i){return a(),t("div")}const m=e(r,[["render",o]]);export{l as __pageData,m as default};

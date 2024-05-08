@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.JR-NCfhW.js";const l=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"guide/自定义主题.md","filePath":"guide/自定义主题.md","lastUpdated":null}'),r={name:"guide/自定义主题.md"};function o(s,n,_,c,d,i){return a(),t("div")}const m=e(r,[["render",o]]);export{l as __pageData,m as default};
