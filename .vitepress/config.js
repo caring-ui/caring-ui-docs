@@ -2,7 +2,7 @@
  * @Author: Wanko
  * @Date: 2024-04-30 14:41:18
  * @LastEditors: Wanko
- * @LastEditTime: 2024-05-08 17:52:04
+ * @LastEditTime: 2024-05-09 18:33:36
  * @Description:
  */
 import { defineConfig } from 'vitepress'
@@ -31,7 +31,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '指南', link: '/guide/什么是VitePress' },
-      { text: '参考', link: '/reference/站点配置' },
+      { text: '组件', link: '/component/组件概览' },
       {
         text: '模块',
         items: [{ text: 'caring-route', link: '/module/caring-route' }]
@@ -62,6 +62,80 @@ export default defineConfig({
         {
           text: '配置和API参考',
           link: '/reference/站点配置'
+        }
+      ],
+      '/component/': [
+        {
+          text: '基础组件',
+          collapsed: false,
+          items: [{ text: 'Image 图片', link: '/component/Image 图片' }]
+        },
+        {
+          text: '表单组件',
+          collapsed: false,
+          items: [{ text: 'Input 输入框', link: '/component/Input 输入框' }]
+        },
+        {
+          text: '数据组件',
+          collapsed: false,
+          items: [
+            {
+              text: 'CircleProgress 圆形进度条 ',
+              link: '/component/CircleProgress 圆形进度条 '
+            }
+          ]
+        },
+        {
+          text: '反馈组件',
+          collapsed: false,
+          items: [
+            {
+              text: 'ActionSheet 操作菜单',
+              link: '/component/ActionSheet 操作菜单'
+            },
+            {
+              text: 'Loading 加载',
+              link: '/component/Loading 加载'
+            }
+          ]
+        },
+        {
+          text: '布局组件',
+          collapsed: false,
+          items: [
+            {
+              text: 'Line 线条',
+              link: '/component/Line 线条'
+            },
+            {
+              text: 'Divider 分割线',
+              link: '/component/Divider 分割线'
+            },
+            {
+              text: 'Empty 空状态',
+              link: '/component/Empty 空状态'
+            }
+          ]
+        },
+        {
+          text: '导航组件',
+          collapsed: false,
+          items: [
+            {
+              text: 'Dropdown 下拉菜单',
+              link: '/component/Dropdown 下拉菜单'
+            }
+          ]
+        },
+        {
+          text: '其他组件',
+          collapsed: false,
+          items: [
+            {
+              text: 'ReadMore 展开阅读更多',
+              link: '/component/ReadMore 展开阅读更多'
+            }
+          ]
         }
       ]
     },
