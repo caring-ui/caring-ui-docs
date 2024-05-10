@@ -2,7 +2,7 @@
  * @Author: Wanko
  * @Date: 2024-04-30 14:41:18
  * @LastEditors: Wanko
- * @LastEditTime: 2024-05-09 18:33:36
+ * @LastEditTime: 2024-05-10 18:56:02
  * @Description:
  */
 import { defineConfig } from 'vitepress'
@@ -73,7 +73,10 @@ export default defineConfig({
         {
           text: '表单组件',
           collapsed: false,
-          items: [{ text: 'Input 输入框', link: '/component/Input 输入框' }]
+          items: [
+            { text: 'Input 输入框', link: '/component/Input 输入框' },
+            { text: 'Slider 滑动选择器', link: '/component/Slider 滑动选择器' }
+          ]
         },
         {
           text: '数据组件',
@@ -114,6 +117,10 @@ export default defineConfig({
             {
               text: 'Empty 空状态',
               link: '/component/Empty 空状态'
+            },
+            {
+              text: 'Mask 遮罩层',
+              link: '/component/Mask 遮罩层'
             }
           ]
         },
