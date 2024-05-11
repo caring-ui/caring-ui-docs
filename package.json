@@ -24,5 +24,8 @@
       ]
     }
   },
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "caring-css": "^0.2.6"
+  }
 }

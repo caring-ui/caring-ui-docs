@@ -1,3 +1,6 @@
+---
+image: 1715399838732divider.png
+---
 # Divider 分割线
 
 ## 基本使用

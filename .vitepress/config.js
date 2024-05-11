@@ -2,7 +2,7 @@
  * @Author: Wanko
  * @Date: 2024-04-30 14:41:18
  * @LastEditors: Wanko
- * @LastEditTime: 2024-05-10 18:56:02
+ * @LastEditTime: 2024-05-11 18:13:22
  * @Description:
  */
 import { defineConfig } from 'vitepress'
@@ -10,6 +10,16 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   // base,
+  head: [
+    // 添加CSP策略
+    [
+      'meta',
+      {
+        httpEquiv: 'Content-Security-Policy',
+        content: "default-src 'self'; img-src 'self' https: data:"
+      }
+    ]
+  ],
   base: '/caring-ui-docs/',
   title: 'CaringUI',
   description: 'CaringUI | 由 Vite 和 Vue 驱动的静态站点生成器',
@@ -34,7 +44,10 @@ export default defineConfig({
       { text: '组件', link: '/component/组件概览' },
       {
         text: '模块',
-        items: [{ text: 'caring-route', link: '/module/caring-route' }]
+        items: [
+          { text: 'caring-route', link: '/module/caring-route' },
+          { text: 'caring-uni', link: '/module/caring-uni' }
+        ]
       }
     ],
     sidebar: {
