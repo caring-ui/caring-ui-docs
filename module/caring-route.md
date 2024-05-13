@@ -1,15 +1,63 @@
 # caring-route
 ## 快速上手
+### 作为单独的模块使用
 **安装**
 ```bash
 npm i caring-route
 ```
 **使用**
-```html
+```vue
 <script>
 import route from 'caring-route'
+
+route('/pages/index/home')
 </script>
 ```
+
+### 在 `caring-ui` 中使用
+通过 `$u.route` 来访问 `caring-route` 模块
+
+```vue
+<template>
+  <view>
+    <c-button @click="$u.route('/pages/index/home')">跳转</c-button>
+    <c-button @click="goHome">跳转</c-button>
+  </view>
+</template>
+<script>
+export default {
+  methods: {
+    goHome() {
+      this.$u.route('/pages/index/home')
+    }
+  }
+}
+</script>
+```
+
+## 特点
+- 支持跳转 `tabBar` 页面
+- 支持 `events` 
+- 支持成功失败回调
+- 支持传递引用类型路由参数
+- 支持解析路由参数
+- rollup打包压缩，体积更小
+
+路由跳转方法，内部是对 `uni-app` 路由跳转api的封装，更加方便调用
+
+支持两种调用方法
+
+1. 函数调用：`route(url[,config])`
+2. 类的实例方法调用：`route[method](url[,params])`
+- `method` 的类型：
+    - `to`
+    - `back`
+    - `tab`
+    - `redirect`
+    - `launch`
+    - `mini` 跳转小程序
+    - `query` 解析路由参数
+
 
 ## 基础使用
 对于不需要传递参数的路由跳转，可以使用如下调用方式
@@ -69,11 +117,9 @@ route.redirect('/pages/index/home', {
 ```
 
 ## 获取路由参数
-在onLoad中使用route的函数调用方式传入options，函授调用的返回值为已经解码的路由参数
+在onLoad中使用route的 `query` 方法传入 options ，函授调用的返回值为已经解码的路由参数
 ```js
 onLoad(options) {
-  const query = route(options)
-  // 或者
   const query = route.query(options)
 }
 ```
@@ -100,7 +146,7 @@ then(res => {
 ```js
 // A页面
 route({
-  type: 'navigateTo',
+  type: 'navigateTo', // 如果是navigateTo，可以不传type
   url: '/pages/index/home', 
   events: {
     onSuccess: (data) => {
