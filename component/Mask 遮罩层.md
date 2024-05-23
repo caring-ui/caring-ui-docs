@@ -1,3 +1,6 @@
+---
+image: 1716457597870mask.png
+---
 # Mask 遮罩层
 
 ::: info 介绍

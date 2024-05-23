@@ -2,13 +2,16 @@
  * @Author: Wanko
  * @Date: 2024-04-30 14:41:18
  * @LastEditors: Wanko
- * @LastEditTime: 2024-05-13 15:01:42
+ * @LastEditTime: 2024-05-16 07:43:16
  * @Description:
  */
 import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  markdown: {
+    // lineNumbers: true, // 可选：显示行号
+  },
   // base,
   head: [
     // 添加CSP策略
@@ -47,7 +50,8 @@ export default defineConfig({
         items: [
           { text: 'caring-route', link: '/module/caring-route' },
           { text: 'caring-uni', link: '/module/caring-uni' },
-          { text: 'caring-test', link: '/module/caring-test' }
+          { text: 'caring-test', link: '/module/caring-test' },
+          { text: 'caring-utils', link: '/module/caring-utils' }
         ]
       }
     ],

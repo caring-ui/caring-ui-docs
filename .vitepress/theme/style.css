@@ -137,3 +137,12 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+code {
+  white-space: pre-wrap !important;
+  word-break: break-word !important;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
