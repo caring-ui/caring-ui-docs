@@ -2,7 +2,7 @@
  * @Author: Wanko
  * @Date: 2024-04-30 14:41:18
  * @LastEditors: Wanko
- * @LastEditTime: 2024-05-16 07:43:16
+ * @LastEditTime: 2024-05-28 17:39:05
  * @Description:
  */
 import { defineConfig } from 'vitepress'
@@ -86,7 +86,10 @@ export default defineConfig({
         {
           text: '基础组件',
           collapsed: false,
-          items: [{ text: 'Image 图片', link: '/component/Image 图片' }]
+          items: [
+            { text: 'Image 图片', link: '/component/Image 图片' },
+            { text: 'Button 按钮', link: '/component/Button 按钮' }
+          ]
         },
         {
           text: '表单组件',
