@@ -15,12 +15,12 @@ route('/pages/index/home')
 ```
 
 ### 在 `caring-ui` 中使用
-通过 `$u.route` 来访问 `caring-route` 模块
+通过 `$c.route` 来访问 `caring-route` 模块
 
 ```vue
 <template>
   <view>
-    <c-button @click="$u.route('/pages/index/home')">跳转</c-button>
+    <c-button @click="$c.route('/pages/index/home')">跳转</c-button>
     <c-button @click="goHome">跳转</c-button>
   </view>
 </template>
@@ -28,7 +28,7 @@ route('/pages/index/home')
 export default {
   methods: {
     goHome() {
-      this.$u.route('/pages/index/home')
+      this.$c.route('/pages/index/home')
     }
   }
 }
@@ -125,7 +125,7 @@ onLoad(options) {
 ```
 
 ## 处理跳转成功
-使用函数调用方式，添加`.then `
+使用函数调用方式，添加 `.then` 
 ```js
 route('pages/index/index').then(res => console.log('跳转成功'))
 
@@ -141,7 +141,7 @@ then(res => {
 ```
 
 ## 监听events事件
-使用函数调用方式，添加`events` 参数
+使用函数调用方式，添加 `events` 参数
 
 ```js
 // A页面
@@ -161,6 +161,14 @@ eventChannel.emit('onSuccess', {
   data: 'data from home'
 })
 route.back()
+```
+
+## 跳转微信小程序
+使用 `mini(appId, path)` 方法来跳转微信小程序
+```js
+route.mini('wx87b638cc2075e9c1', 'pages/tabbar/components').then(() => {
+  console.log('跳转成功')
+})
 ```
 
 ## 注意事项
