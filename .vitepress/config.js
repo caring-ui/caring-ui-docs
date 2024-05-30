@@ -2,7 +2,7 @@
  * @Author: Wanko
  * @Date: 2024-04-30 14:41:18
  * @LastEditors: Wanko
- * @LastEditTime: 2024-05-28 17:39:05
+ * @LastEditTime: 2024-05-30 10:40:16
  * @Description:
  */
 import { defineConfig } from 'vitepress'
@@ -48,6 +48,7 @@ export default defineConfig({
       {
         text: '模块',
         items: [
+          { text: 'caring-css', link: '/module/caring-css' },
           { text: 'caring-route', link: '/module/caring-route' },
           { text: 'caring-uni', link: '/module/caring-uni' },
           { text: 'caring-test', link: '/module/caring-test' },

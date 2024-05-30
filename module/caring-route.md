@@ -1,4 +1,7 @@
 # caring-route
+::: info 介绍
+针对 `uni-app` 路由跳转 API 的二次封装，更加方便调用
+:::
 ## 快速上手
 ### 作为单独的模块使用
 **安装**
@@ -42,6 +45,7 @@ export default {
 - 支持传递引用类型路由参数
 - 支持解析路由参数
 - rollup打包压缩，体积更小
+- 支持跳转小程序
 
 路由跳转方法，内部是对 `uni-app` 路由跳转api的封装，更加方便调用
 
@@ -78,6 +82,7 @@ route.back(delta)
 
 // switchTab
 route.tab('pages/index/index')
+
 // 或者
 route({
   url:'pages/index/index',

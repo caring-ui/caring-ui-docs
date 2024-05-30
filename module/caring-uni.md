@@ -1,9 +1,7 @@
 # caring-uni
 
 ::: info
-
 针对 `uni-app` 常用的一些 API 的二次封装，更加方便调用
-
 :::
 
 ## 快速开始
@@ -332,7 +330,7 @@ export const copy = (data) => {
 
 :::
 
-### previewImage
+### `previewImage` 预览图片
 
 针对 `uni-app` 的 `uni.previewImage()` 的二次封装，调用更加简洁。
 

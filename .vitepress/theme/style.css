@@ -43,13 +43,13 @@
  *   in custom container, badges, etc.
  * -------------------------------------------------------------------------- */
 
- :root {
+:root {
   --vp-c-default-1: var(--vp-c-gray-1);
   --vp-c-default-2: var(--vp-c-gray-2);
   --vp-c-default-3: var(--vp-c-gray-3);
   --vp-c-default-soft: var(--vp-c-gray-soft);
 
-  --vp-c-brand-1: #F27BC0;
+  --vp-c-brand-1: #f27bc0;
   --vp-c-brand-2: var(--vp-c-indigo-2);
   --vp-c-brand-3: var(--vp-c-indigo-3);
   --vp-c-brand-soft: var(--vp-c-indigo-soft);
@@ -77,10 +77,10 @@
 :root {
   --vp-button-brand-border: transparent;
   --vp-button-brand-text: var(--vp-c-white);
-  --vp-button-brand-bg: #F27BC0;
+  --vp-button-brand-bg: #f27bc0;
   --vp-button-brand-hover-border: transparent;
   --vp-button-brand-hover-text: var(--vp-c-white);
-  --vp-button-brand-hover-bg: #F27BC0cc;
+  --vp-button-brand-hover-bg: #f27bc0cc;
   --vp-button-brand-active-border: transparent;
   --vp-button-brand-active-text: var(--vp-c-white);
   --vp-button-brand-active-bg: var(--vp-c-brand-1);
@@ -94,14 +94,14 @@
   --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(
     120deg,
-    #F5576C 30%,
-    #F093FB
+    #f5576c 30%,
+    #f093fb
   );
 
   --vp-home-hero-image-background-image: linear-gradient(
     -45deg,
-    #F5576C 50%,
-    #F093FB 50%
+    #f5576c 50%,
+    #f093fb 50%
   );
   --vp-home-hero-image-filter: blur(44px);
 }
@@ -137,9 +137,10 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
-code {
-  white-space: pre-wrap !important;
-  word-break: break-word !important;
+td code {
+  white-space: nowrap; 
+  word-break: normal; /* 防止单词被折行 */
+  overflow-x: auto; /* 允许水平滚动 */
 }
 
 pre {
