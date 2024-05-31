@@ -186,6 +186,147 @@ body, #app {
 
 ## Flex and Grid
 
+### 快速布局
+
+一些较常用的布局类
+
+| class             | css                                                          | 说明                                       |
+| ----------------- | ------------------------------------------------------------ | ------------------------------------------ |
+| `flex-center`     | `display: flex;`<br />`align-items: center;`                 | 水平居中                                   |
+| `flex-col-center` | `display: flex;`<br />`flex-direction: column;`<br />`align-items: center;` | 纵向flex布局水平居中                       |
+| `flex-cc`         | `display: flex;`<br />`align-items: center;`<br />`justify-content: center;` | 水平垂直居中                               |
+| `grid-{n}`        |                                                              | 快速实现一个等分的gird宫格布局<br />n: 1-6 |
+
+### Flex Direction
+
+| class              | Css                                                      |
+| ------------------ | -------------------------------------------------------- |
+| `flex-row`         | `display: flex;`<br /> `flex-direction: row;`            |
+| `flex-row-reverse` | `display: flex;`<br /> `flex-direction: row-reverse;`    |
+| `flex-col`         | `display: flex;` <br />`flex-direction: column;`         |
+| `flex-col-reverse` | `display: flex;` <br />`flex-direction: column-reverse;` |
+
+### Flex Wrap
+
+控制Flex子项换行的功能类
+
+| class               | css                                               |
+| ------------------- | ------------------------------------------------- |
+| `flex-wrap`         | `display: flex;`<br /> `flex-wrap: wrap;`         |
+| `flex-wrap-reverse` | `display: flex;`<br /> `flex-wrap: wrap-reverse;` |
+| `flex-nowrap`       | `display: flex;` <br />`flex-wrap: nowrap;`       |
+
+### Flex
+
+| class           | css               | 说明                                                         |
+| --------------- | ----------------- | ------------------------------------------------------------ |
+| `flex-initial`  | `flex: 0 1 auto;` | 只缩小不放大 允许 flex 项目在考虑到其初始尺寸的情况下**缩小但不放大**（会被压缩） 也是一个元素变为flex容器后，其flex项目的默认flex属性 |
+| `flex-{n}`      | `flex: {n} 1 0%;` | n:0-6 允许 flex 项目根据需要放大和缩小，忽略其初始尺寸。 当存在多余空间时，会自动充满剩余空间 fle: 1 === flex: 1 1 0% flex: 0 === flex 0 1 0%，flex0项目完全压缩为子元素宽度 |
+| `flex-auto`     | `flex: 1 1 auto;` | 允许一个 flex 项目在考虑到其初始大小的情况下放大和缩小       |
+| `flex-none`     | `flex: none;`     | 阻止一个 flex 项目的放大和缩小，弹性失效 相当于flex-shrink-0的效果 |
+| `flex-grow-0`   | `flex-grow: 0;`   |                                                              |
+| `flex-grow`     | `flex-grow: 1;`   | 允许一个 flex 项目放大，以填充任何可用空间 相当于flex-1的效果 |
+| `flex-shrink-0` | `flex-shrink: 0;` | 阻止一个 flex 项目缩小 相当于flex-none                       |
+| `flex-shrink`   | `flex-shrink: 1;` | flex项目的默认属性                                           |
+
+### Order
+
+| Class         | Css             | 说明  |
+| ------------- | --------------- | ----- |
+| `order-{n}`   | `order: {n};`   | n:1-6 |
+| `order-first` | `order: -9999;` |       |
+| `order-last`  | `order: 9999;`  |       |
+
+### Justify Content
+
+用于控制 flex 和 grid 项目如何沿着容器的主轴定位的功能类。
+
+| Class             | Css                               | 说明                                                         |
+| ----------------- | --------------------------------- | ------------------------------------------------------------ |
+| `justify-start`   | `justify-content: flex-start;`    |                                                              |
+| `justify-end`     | `justify-content: flex-end;`      |                                                              |
+| `justify-center`  | `justify-content: center;`        |                                                              |
+| `justify-between` | `justify-content: space-between;` |                                                              |
+| `justify-around ` | `justify-content: space-around;`  | (使每个项目两侧的距离相等。                                  |
+| `justify-evenly`  | `justify-content: space-evenly;`  | 使每个项目周围的距离相等,但不像使用 justify-around 时项目之间有双倍的距离。 |
+
+### Align Content 
+
+用于控制在多行 flex 和grid容器中行的位置的功能类。
+
+| Class             | Css                             |
+| ----------------- | ------------------------------- |
+| `content-start`   | `align-content: flex-start;`    |
+| `content-center`  | `align-content: center;`        |
+| `content-end`     | `align-content: flex-end;`      |
+| `content-between` | `align-content: space-between;` |
+| `content-around`  | `align-content: space-around;`  |
+| `content-evenly`  | `align-content: space-evenly;`  |
+
+### Align Items
+
+用于控制 Flex 和Grid项目如何在容器的交叉轴定位的功能类。
+
+| Class            | Css                           |
+| ---------------- | ----------------------------- |
+| `items-start`    | `align-items: flex-start;`    |
+| `items-end`      | `align-items: flex-end;`      |
+| `items-center`   | `align-items: flex-center;`   |
+| `items-baseline` | `align-items: flex-baseline;` |
+| `items-stretch`  | `align-items: flex-stretch;`  |
+
+### Align Self
+
+用于控制单个 flex 或grid 项目如何沿其容器的交叉轴定位的功能类。
+
+| Class           | Css                     |
+| --------------- | ----------------------- |
+| `self-auto`     | `align-self: auto;`     |
+| `self-start`    | `align-self: start;`    |
+| `self-end`      | `align-self: end;`      |
+| `self-center`   | `align-self: center;`   |
+| `self-stretch`  | `align-self: stretch;`  |
+| `self-baseline` | `align-self: baseline;` |
+
+### Grid
+
+| class           | css                                                   | 说明                                                         |
+| --------------- | ----------------------------------------------------- | ------------------------------------------------------------ |
+| `grid-cols-{n}` | `grid-template-columns: repeat({n}, minmax(0, 1fr));` | 用于在网格布局中指定列的功能类。                             |
+| `col-span-{n}`  | `grid-column: span {n} / span {2};`                   | 用于控制在网格列中元素的大小和放置方式的功能类。<br />n：1-8从1开始，默认是1 |
+| `gap-{size}`    | `gap: {size}px`                                       |                                                              |
+| `gap-x-{size}`  | `column-gap: {size}px`                                | size: 0-20之间2和5的倍数                                     |
+| `gap-y-{size}`  | `row-gap: {size}px`                                   |                                                              |
+
+
+
+### Justify Items
+
+用于控制网格项目如何沿其内联轴对齐的功能类。
+
+| class                   | css                       |
+| ----------------------- | ------------------------- |
+| `justify-items-start`   | `justify-items: start;`   |
+| `justify-items-end`     | `justify-items: end;`     |
+| `justify-items-center`  | `justify-items: center;`  |
+| `justify-items-stretch` | `justify-items: stretch;` |
+
+
+
+### Justify Self
+
+用于控制单个网格项如何沿其内联轴对齐的功能类。
+
+| class                  | css                      |
+| ---------------------- | ------------------------ |
+| `justify-self-auto`    | `justify-self: auto;`    |
+| `justify-self-start`   | `justify-self: start;`   |
+| `justify-self-end`     | `justify-self: end;`     |
+| `justify-self-center`  | `justify-self: center;`  |
+| `justify-self-stretch` | `justify-self: stretch;` |
+
+
+
 ## 边距 Spacing
 
 ::: tip 范围说明
