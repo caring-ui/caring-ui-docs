@@ -105,10 +105,10 @@ body, #app {
 ### Box Sizing
 盒模型
 
-| 类名           | Css                       | 说明 |
+| 类名           | css                       | 说明 |
 | -------------- | ------------------------- | ---- |
-| `.box-border`  | `box-sizing: border-box`  |      |
-| `.box-content` | `box-sizing: content-box` |      |
+| `box-border`  | `box-sizing: border-box`  |      |
+| `box-content` | `box-sizing: content-box` |      |
 
 ### Display
 
@@ -116,13 +116,13 @@ body, #app {
 
 | 类名              | css                     | 说明                                           |
 | ----------------- | ----------------------- | ---------------------------------------------- |
-| `.block`          | `display: block`        |                                                |
-| `.inline-block`   | `display: inline-block` |                                                |
-| `.inline`         | `display: inline`       |                                                |
-| `.inline-flex`    | `display: inline-flex;` | 使得该元素变为行内flex容器，自适应子元素的大小 |
-| `.block`          | `display: block;`       |                                                |
-| `.none` `.hidden` | `display: none;`        |                                                |
-| `.grid`           | `display: grid;`        |                                                |
+| `block`          | `display: block`        |                                                |
+| `inline-block`   | `display: inline-block` |                                                |
+| `inline`         | `display: inline`       |                                                |
+| `inline-flex`    | `display: inline-flex;` | 使得该元素变为行内flex容器，自适应子元素的大小 |
+| `block`          | `display: block;`       |                                                |
+| `none` `hidden` | `display: none;`        |                                                |
+| `grid`           | `display: grid;`        |                                                |
 
 ### 浮动
 
@@ -136,10 +136,10 @@ body, #app {
 
 | 类名           | css             | 说明     |
 | -------------- | --------------- | -------- |
-| `.float-right` | `float: right;` |          |
-| `.float-left`  | `float: left;`  |          |
-| `.float-none`  | `float: none;`  |          |
-| `.clear-both`  | `clear: both;`  | 清除浮动 |
+| `float-right` | `float: right;` |          |
+| `float-left`  | `float: left;`  |          |
+| `float-none`  | `float: none;`  |          |
+| `clear-both`  | `clear: both;`  | 清除浮动 |
 
 ### 溢出 overflow
 
@@ -147,23 +147,23 @@ body, #app {
 
 | 类名                | css                  | 说明                                                         |
 | ------------------- | -------------------- | ------------------------------------------------------------ |
-| `.overflow-auto`    | `overflow: auto;`    | 在一个元素的内容溢出该元素的边界时为其添加滚动条。即只在需要滚动时才会显示 |
-| `.overflow-hidden`  | `overflow: hidden;`  | 处理父子元素产生的外边距塌陷时很好用                         |
-| `.overflow-visible` | `overflow: visible;` | 防止元素内的内容被剪切。**任何溢出元素边界的内容都将是可见的。** |
-| `.overflow-scroll`  | `overflow: scroll;`  | 总是显示滚动条                                               |
+| `overflow-auto`    | `overflow: auto;`    | 在一个元素的内容溢出该元素的边界时为其添加滚动条。即只在需要滚动时才会显示 |
+| `overflow-hidden`  | `overflow: hidden;`  | 处理父子元素产生的外边距塌陷时很好用                         |
+| `overflow-visible` | `overflow: visible;` | 防止元素内的内容被剪切。**任何溢出元素边界的内容都将是可见的。** |
+| `overflow-scroll`  | `overflow: scroll;`  | 总是显示滚动条                                               |
 
 ### 定位
 
 | 类名                                              | css                                     | 说明                                                         |
 | ------------------------------------------------- | --------------------------------------- | ------------------------------------------------------------ |
-| `.relative`                                       | `position: relative;`                   | 当需要给元素设置层级时，指定这个属性才会生效                 |
-| `.absolute`                                       | `position: absolute;`                   | 绝对定位                                                     |
-| `.fixed`                                          | `position: fixed;`                      | 固定定位                                                     |
-| `.sticky`                                         | `position: sticky;`                     |                                                              |
-| `.inset-0`                                        | `top: 0; right: 0; bottom: 0; left: 0;` |                                                              |
-| `.inset-x-0`                                      | `left: 0; right: 0;`                    |                                                              |
-| `.inset-y-0`                                      | `.inset-y-0`                            |                                                              |
-| `.top-{n}` `.right-{n}` `.left-{n}` `.bottom-{n}` | `left: {n}px;`                          | n说明：<br />-15～15px：2和5的倍数递增<br /> 15～50px：5的整数倍递增<br /> -15～-50px：5的整数倍递增 |
+| `relative`                                       | `position: relative;`                   | 当需要给元素设置层级时，指定这个属性才会生效                 |
+| `absolute`                                       | `position: absolute;`                   | 绝对定位                                                     |
+| `fixed`                                          | `position: fixed;`                      | 固定定位                                                     |
+| `sticky`                                         | `position: sticky;`                     |                                                              |
+| `inset-0`                                        | `top: 0; right: 0; bottom: 0; left: 0;` |                                                              |
+| `inset-x-0`                                      | `left: 0; right: 0;`                    |                                                              |
+| `inset-y-0`                                      | `.inset-y-0`                            |                                                              |
+| `top-{n}` `right-{n}` `left-{n}` `bottom-{n}` | `left: {n}px;`                          | n说明：<br />-15～15px：2和5的倍数递增<br /> 15～50px：5的整数倍递增<br /> -15～-50px：5的整数倍递增 |
 
 ### 可见性
 
@@ -199,7 +199,7 @@ body, #app {
 
 ### Flex Direction
 
-| class              | Css                                                      |
+| class              | css                                                      |
 | ------------------ | -------------------------------------------------------- |
 | `flex-row`         | `display: flex;`<br /> `flex-direction: row;`            |
 | `flex-row-reverse` | `display: flex;`<br /> `flex-direction: row-reverse;`    |
@@ -231,7 +231,7 @@ body, #app {
 
 ### Order
 
-| Class         | Css             | 说明  |
+| class         | css             | 说明  |
 | ------------- | --------------- | ----- |
 | `order-{n}`   | `order: {n};`   | n:1-6 |
 | `order-first` | `order: -9999;` |       |
@@ -241,7 +241,7 @@ body, #app {
 
 用于控制 flex 和 grid 项目如何沿着容器的主轴定位的功能类。
 
-| Class             | Css                               | 说明                                                         |
+| class             | css                               | 说明                                                         |
 | ----------------- | --------------------------------- | ------------------------------------------------------------ |
 | `justify-start`   | `justify-content: flex-start;`    |                                                              |
 | `justify-end`     | `justify-content: flex-end;`      |                                                              |
@@ -254,7 +254,7 @@ body, #app {
 
 用于控制在多行 flex 和grid容器中行的位置的功能类。
 
-| Class             | Css                             |
+| class             | css                             |
 | ----------------- | ------------------------------- |
 | `content-start`   | `align-content: flex-start;`    |
 | `content-center`  | `align-content: center;`        |
@@ -267,7 +267,7 @@ body, #app {
 
 用于控制 Flex 和Grid项目如何在容器的交叉轴定位的功能类。
 
-| Class            | Css                           |
+| class            | css                           |
 | ---------------- | ----------------------------- |
 | `items-start`    | `align-items: flex-start;`    |
 | `items-end`      | `align-items: flex-end;`      |
@@ -279,7 +279,7 @@ body, #app {
 
 用于控制单个 flex 或grid 项目如何沿其容器的交叉轴定位的功能类。
 
-| Class           | Css                     |
+| class           | css                     |
 | --------------- | ----------------------- |
 | `self-auto`     | `align-self: auto;`     |
 | `self-start`    | `align-self: start;`    |
@@ -340,7 +340,7 @@ body, #app {
 
 ### 默认边距
 
-| Class                                                        | Css                  | 说明               |
+| class                                                        | css                  | 说明               |
 | ------------------------------------------------------------ | -------------------- | ------------------ |
 | `mt`，`ml`，`mr`，`mb`，`pt`，`pb`，`pl`，`pr`，`mx`，`my`，`px`，`py` | `margins-top: 15px;` | 不带后缀的默认边距 |
 
@@ -416,7 +416,7 @@ body, #app {
 
 ### 字体颜色
 
-| Class                                                        |
+| class                                                        |
 | ------------------------------------------------------------ |
 | `text-red` ，`text-orange` ，`text-yellow` ，`text-green` ，`text-blue` ，`text-cyan`，`text-purple`，`text-mauve`，`text-pink`，`text-olive`，`text-brown`，`text-grey`，`text-gray`，`text-black`，`text-white`，`text-333`，`text-666`，`text-999`，`text-ccc`，`text-eee` |
 
@@ -461,7 +461,7 @@ body, #app {
 
 ### 圆角
 
-| Class                                                        | Css                                | 说明                              |
+| class                                                        | css                                | 说明                              |
 | ------------------------------------------------------------ | ---------------------------------- | --------------------------------- |
 | `rounded`                                                    | `border-radius: 8px;`              | 默认8px                           |
 | `rounded-full`                                               | `border-radius: 9999px;`           | 创建药丸形💊和圆圈（需指定宽高）。 |
@@ -474,7 +474,7 @@ body, #app {
 
 ## 交互 Interactivity
 
-| Class             | Css                  | 说明                                                         |
+| class             | css                  | 说明                                                         |
 | ----------------- | -------------------- | ------------------------------------------------------------ |
 | `appearance-none` | `appearance: none;`  | 重置一个元素的所有浏览器特定样式。这个功能通常用于创建自定义表单组件。 |
 | `select-none`     | `user-select: none;` |                                                              |

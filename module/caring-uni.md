@@ -1,6 +1,6 @@
 # caring-uni
 
-::: info
+::: info 介绍
 针对 `uni-app` 常用的一些 API 的二次封装，更加方便调用
 :::
 

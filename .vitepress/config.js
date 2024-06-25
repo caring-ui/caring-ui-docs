@@ -2,7 +2,7 @@
  * @Author: Wanko
  * @Date: 2024-04-30 14:41:18
  * @LastEditors: Wanko
- * @LastEditTime: 2024-05-30 10:40:16
+ * @LastEditTime: 2024-06-25 13:38:00
  * @Description:
  */
 import { defineConfig } from 'vitepress'
@@ -23,7 +23,7 @@ export default defineConfig({
       }
     ]
   ],
-  base: '/caring-ui-docs/',
+  // base: '/caring-ui-docs/',
   title: 'CaringUI',
   description: 'CaringUI | 由 Vite 和 Vue 驱动的静态站点生成器',
   lastUpdated: true,
@@ -52,7 +52,8 @@ export default defineConfig({
           { text: 'caring-route', link: '/module/caring-route' },
           { text: 'caring-uni', link: '/module/caring-uni' },
           { text: 'caring-test', link: '/module/caring-test' },
-          { text: 'caring-utils', link: '/module/caring-utils' }
+          { text: 'caring-utils', link: '/module/caring-utils' },
+          { text: 'caring-time', link: '/module/caring-time' }
         ]
       }
     ],
@@ -143,6 +144,10 @@ export default defineConfig({
             {
               text: 'Mask 遮罩层',
               link: '/component/Mask 遮罩层'
+            },
+            {
+              text: 'Avatar 头像',
+              link: '/component/Avatar 头像'
             }
           ]
         },
