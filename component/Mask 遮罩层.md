@@ -4,18 +4,18 @@ image: 1716457597870mask.png
 # Mask 遮罩层
 
 ::: info 介绍
-用于弹窗场景
+创建一个遮罩层，用于强调特定的页面元素，并阻止用户对遮罩下层的内容进行操作，一般用于弹窗场景
 :::
 
 ## 基础使用
 
 通过`v-model`绑定一个布尔值，来控制遮罩层的显示与隐藏
-默认点击可关闭
+默认点击可关闭 `mask-close-able`值为 `true`, 此时点击遮罩会派发 `click` 事件
 
 ```vue
 <template>
   <div>
-    <c-mask v-model="showMask" />
+    <c-mask v-model="showMask" @click="onMaskClick"/>
     <button @click="showMask = true">打开mask</button>
   </div>
 </template>
@@ -25,6 +25,11 @@ export default {
   data() {
     return {
       showMask: false
+    }
+  },
+  methods: {
+    onMaskClick() {
+      console.log('遮罩');
     }
   }
 }
@@ -81,14 +86,14 @@ export default {
 | v-model         | 是否显示遮罩       | *boolean*          | `false`    |
 | z-index         | z-index 层级       | *string \| number* | `10070`    |
 | duration        | 动画时长，单位毫秒 | *string \| number* | `300`      |
-| mask-click-able | 遮罩是否可点击     | *boolean*          | `true`     |
+| mask-close-able | 遮罩是否可点击关闭     | *boolean*          | `true`     |
 | filter          | 毛玻璃背景         | *boolean*          | `false`    |
 
 ### events
 
 | **事件名** | **说明**                                        | **回调参数** |
 | ---------- | ----------------------------------------------- | ------------ |
-| click      | `mask-click-able`为`true`时，点击遮罩发送此事件 | --           |
+| click      | `mask-close-able`为`true`时，点击遮罩发送此事件 | --           |
 
 ### slot
 

@@ -2,7 +2,7 @@
  * @Author: Wanko
  * @Date: 2024-04-30 14:41:18
  * @LastEditors: Wanko
- * @LastEditTime: 2024-06-25 13:38:00
+ * @LastEditTime: 2024-06-28 09:29:26
  * @Description:
  */
 import { defineConfig } from 'vitepress'
@@ -43,7 +43,7 @@ export default defineConfig({
     },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: '指南', link: '/guide/什么是VitePress' },
+      { text: '指南', link: '/guide/介绍' },
       { text: '组件', link: '/component/组件概览' },
       {
         text: '模块',
@@ -53,9 +53,11 @@ export default defineConfig({
           { text: 'caring-uni', link: '/module/caring-uni' },
           { text: 'caring-test', link: '/module/caring-test' },
           { text: 'caring-utils', link: '/module/caring-utils' },
-          { text: 'caring-time', link: '/module/caring-time' }
+          { text: 'caring-time', link: '/module/caring-time' },
+          { text: 'caring-request', link: '/module/caring-request' }
         ]
-      }
+      },
+      { text: '更新日志', link: '/log/更新日志' }
     ],
     sidebar: {
       '/reference/': [
@@ -98,7 +100,8 @@ export default defineConfig({
           collapsed: false,
           items: [
             { text: 'Input 输入框', link: '/component/Input 输入框' },
-            { text: 'Slider 滑动选择器', link: '/component/Slider 滑动选择器' }
+            { text: 'Slider 滑动选择器', link: '/component/Slider 滑动选择器' },
+            { text: 'VerifyCode 验证码倒计时', link: '/component/VerifyCode 验证码倒计时' },
           ]
         },
         {
@@ -122,6 +125,18 @@ export default defineConfig({
             {
               text: 'Loading 加载',
               link: '/component/Loading 加载'
+            },
+            {
+              text: 'Popup 弹出层',
+              link: '/component/Popup 弹出层'
+            },
+            {
+              text: 'TopTips 顶部提示',
+              link: '/component/TopTips 顶部提示'
+            },
+            {
+              text: 'Toast 消息提示',
+              link: '/component/Toast 消息提示'
             }
           ]
         },

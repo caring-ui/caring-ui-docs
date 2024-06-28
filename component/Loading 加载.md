@@ -8,10 +8,10 @@
 <c-loading />
 ```
 ### 自定义颜色
-通过 `color` 属性设置加载图标的颜色。
+通过 `color` 属性设置加载图标的颜色，支持主题色值。
 ```html
 <c-loading color="success" />
-<c-loading color="red" />
+<c-loading color="#ccc" />
 ```
 
 ### 自定义大小

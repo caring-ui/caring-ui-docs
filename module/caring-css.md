@@ -86,11 +86,11 @@ ul {
   box-sizing: border-box;
 }
 
-// 全局字体大小和颜色,浏览器的默认font-size就是16px
+// 全局字体大小和颜色, 移动端字体14px,pc端浏览器的默认font-size就是16px
 page,
 html {
   color: #333;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 html,
@@ -503,8 +503,8 @@ body, #app {
 
 | class                    | css                                                          | 说明                                                         |
 | ------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| `hover`                  | `&:active {  opacity: 0.5; }`                                | 用于点击时的激活效果                                         |
+| `hover`                  | `&:active {  opacity: 0.6; }`                                | 用于点击时的激活效果                                         |
 | `shadow`                 | `0 0 15px rgba(224, 224, 224, 0.35)`            | 一个内置的阴影，如果项目内需要使用定制阴影，推荐在app.vue内定义 `bg-shadow` |
 | `page`                   | `height: 100%; overflow: hidden;`                            | 一般只用在每个页面的最顶层元素，限制此页面宽度为屏幕宽度，不会被子元素撑开（适用于页面不存在滚动的情况） |
 | `safe-area-inset-bottom` | | 底部安全区域                                                 |
-
+|`reset-button`||重置按钮样式|
