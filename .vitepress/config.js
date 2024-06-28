@@ -2,7 +2,7 @@
  * @Author: Wanko
  * @Date: 2024-04-30 14:41:18
  * @LastEditors: Wanko
- * @LastEditTime: 2024-06-28 17:28:49
+ * @LastEditTime: 2024-06-28 17:37:43
  * @Description:
  */
 import { defineConfig } from 'vitepress'
@@ -24,7 +24,7 @@ export default defineConfig({
     ]
   ],
   // base: '/caring-ui-docs/',
-  base: './',
+  base: '/',
   title: 'CaringUI',
   description: 'CaringUI | 由 Vite 和 Vue 驱动的静态站点生成器',
   lastUpdated: true,
@@ -102,7 +102,10 @@ export default defineConfig({
           items: [
             { text: 'Input 输入框', link: '/component/Input 输入框' },
             { text: 'Slider 滑动选择器', link: '/component/Slider 滑动选择器' },
-            { text: 'VerifyCode 验证码倒计时', link: '/component/VerifyCode 验证码倒计时' },
+            {
+              text: 'VerifyCode 验证码倒计时',
+              link: '/component/VerifyCode 验证码倒计时'
+            }
           ]
         },
         {
